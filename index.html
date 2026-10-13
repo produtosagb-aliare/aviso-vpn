@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>AliBoard — acesso pela VPN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0A0F0B;--ink2:#101611;--lima:#A3E635;--ambar:#F5B638}
+  *{box-sizing:border-box;margin:0}
+  body{min-height:100dvh;display:grid;place-items:center;padding:24px;background:
+    radial-gradient(60rem 30rem at 50% -10%,rgba(163,230,53,.10),transparent 60%),var(--ink);
+    color:rgba(255,255,255,.7);font-family:Inter,system-ui,sans-serif}
+  .card{width:min(100%,32rem);padding:40px 32px;border-radius:1rem;background:linear-gradient(180deg,rgba(255,255,255,.05),transparent 40%),var(--ink2);
+    border:1px solid rgba(255,255,255,.08);box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 24px 60px -20px rgba(0,0,0,.8),0 4px 12px rgba(0,0,0,.4);
+    animation:in .6s cubic-bezier(.22,1,.36,1) both}
+  .ico{width:48px;height:48px;border-radius:.75rem;display:grid;place-items:center;background:rgba(245,182,56,.12);border:1px solid rgba(245,182,56,.3);margin-bottom:24px}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:1.65rem;line-height:1.2;color:rgba(255,255,255,.92);margin-bottom:12px}
+  p{line-height:1.6;margin-bottom:24px}
+  .btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border-radius:.75rem;background:var(--lima);color:var(--ink);
+    font-weight:500;text-decoration:none;transition:transform .25s cubic-bezier(.22,1,.36,1),box-shadow .25s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px -6px rgba(163,230,53,.5)}
+  .btn:focus-visible{outline:2px solid rgba(163,230,53,.4);outline-offset:3px}
+  small{display:block;margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:.75rem;color:rgba(255,255,255,.45)}
+  @keyframes in{from{opacity:0;transform:translateY(12px)}}
+  @media (prefers-reduced-motion:reduce){.card{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="ico" aria-hidden="true">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5B638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  </div>
+  <h1>O AliBoard só funciona dentro da VPN</h1>
+  <p>Conecte-se à VPN da Aliare e use o botão abaixo. Se você já está conectado e a página não abrir, aguarde alguns instantes e tente novamente.</p>
+  <a class="btn" href="http://app.aliboard.com.br/">Acessar o AliBoard</a>
+  <small>app.aliboard.com.br · rede interna Aliare</small>
+</main>
+</body>
+</html>
